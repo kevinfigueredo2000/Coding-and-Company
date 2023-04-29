@@ -1,21 +1,33 @@
 import { Col, Row } from "react-bootstrap";
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa"
+import { BiErrorCircle } from "react-icons/bi"
 import "./Chat.css"
 
 export const Chat = () => {
     const [display, setDisplay] = useState("d-none");
 
     const handleShow = () => {
-        display === "d-none" ? setDisplay("d-block") : setDisplay("d-none")
+        display === "d-none" ? setDisplay("d-flex") : setDisplay("d-none")
     }
 
     return (
         <>
-            <Row className={`${display}`} id="chat-opcion-1">
-                Completa el formulario
+            <Row className={`${display}`} href="" id="chat-opcion-1">
+                <Col xxl="1">
+                    <BiErrorCircle />
+                </Col>
+                <Col xxl="auto">
+                    <p>Completa el formulario</p>
+                </Col>
             </Row>
-            <Row className={`${display}`} id="chat-opcion-2">
-                Escribenos en whatsapp
+            <Row className={`${display}`} href="" id="chat-opcion-2">
+                <Col xxl="1">
+                    <FaWhatsapp />
+                </Col>
+                <Col xxl="auto">
+                    <p>Escribenos en whatsapp</p>
+                </Col>
             </Row>
             <Row id="chat" onClick={handleShow}>
                 <Col xxl="3">

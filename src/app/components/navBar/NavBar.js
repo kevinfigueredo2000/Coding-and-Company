@@ -40,7 +40,7 @@ export const Navbar = () => {
         display === "d-none" ? setDisplay("d-block") : setDisplay("d-none")
     }
     return (
-        <section >
+        < >
             <Container id="nav-bar" ref={BgNav}>
                 <a href="#index"><img src="/assets/white-arrow.svg" ref={ToTop} className="d-none" id="to-top" /></a>
                 <Row>
@@ -51,38 +51,38 @@ export const Navbar = () => {
                                 <img src="/assets/logo.svg" ref={Logo} className="d-none" />
                             </a>
                         </li>
-                        <li className="nav-item col my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display}`} />
+                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Cursos</a>
                         </li>
-                        <li className="nav-item col my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display}`} />
+                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Quiénes somos</a>
                         </li>
-                        <li className="nav-item col my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display}`} />
+                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Noticias Frescas</a>
                         </li>
-                        <li className="nav-item col my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display}`} />
+                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href=""><u><b>#Wearedoers</b></u></a>
                         </li>
-                        <li className="nav-item col my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display}`} />
+                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Contacto</a>
                         </li>
-                        <li className="nav-item me-4">
+                        <li className=" me-4">
                             <a href=""><img src="/assets/email.svg" className="iconos-nav" /></a>
                         </li>
-                        <li className="nav-item me-4">
+                        <li className=" me-4">
                             <a href=""><img src="/assets/instagram.svg" className="iconos-nav" /></a>
                         </li>
-                        <li className="nav-item me-4">
+                        <li className="me-4">
                             <a href=""><img src="/assets/globe.svg" className="iconos-nav" /></a>
                         </li>
                     </ul>
                 </Row>
             </Container>
-        </section>
+        </>
     )
 }

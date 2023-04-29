@@ -19,7 +19,7 @@
     position: fixed;
     background-color: #E6511B;
     color: white;
-    bottom:91px;
+    bottom: 91px;
     z-index: 20;
     border: 0px;
     right: 195px;
@@ -29,10 +29,9 @@
     position: fixed;
     background-color: #0D753B;
     color: white;
-    bottom: 141px;
+    bottom: 157px;
     z-index: 20;
     border: 0px;
     right: 195px;
     padding: 13px 8px;
-
 }

@@ -12,8 +12,8 @@ import { Chat } from "./components/chat/Chat";
 export default function Home() {
   return (
     <>
-      <header>
-        <Navbar />
+      <header >
+        <Navbar className="w-100"/>
       </header>
       <main >
         <Chat/>

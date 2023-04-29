@@ -8,23 +8,23 @@ export const Footer = () => {
                 <Row className="w-100">
                     <ul className="nav justify-content-center">
                         <li className="nav-item mx-4 cursos">
-                            <a>Cursos</a>
+                            <a href="#">Cursos</a>
                         </li>
-                        <li className="nav-item mx-4 prueba">
-                            <a>Quiénes somos</a>
+                        <li className="nav-item mx-4 footer-nav-separator">
+                            <a href="#">Quiénes somos</a>
                         </li>
-                        <li className="nav-item mx-4 prueba">
-                            <a>Noticias Frescas</a>
+                        <li className="nav-item mx-4" id="footer-nav-separator-mid">
+                            <a href="#">Noticias Frescas</a>
                         </li>
-                        <li className="nav-item mx-4 prueba">
-                            <a>#Wearedoers</a>
+                        <li className="nav-item mx-4 footer-nav-separator">
+                            <a href="#">#Wearedoers</a>
                         </li>
                         <li className="nav-item mx-4 contacto">
-                            <a>Contacto</a>
+                            <a href="#">Contacto</a>
                         </li>
                     </ul>
                 </Row>
-            </section>
+            </section >
             <section id="footer">
                 <Container>
                     <Row className="pt-4">
