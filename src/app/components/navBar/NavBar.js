@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 
 export const Navbar = () => {
     const [display, setDisplay] = useState("d-none");
-    const [ubicacionPrincipal, setUbicacionPrincipal] = useState(window.pageYOffset);
+    const [ubicacionPrincipal, setUbicacionPrincipal] = useState(window?.pageYOffset);
     const [desplazamiento_Actual, setDesplazamiento_Actual] = useState(0);
     const BgNav = useRef()
     const Logo = useRef()
@@ -12,7 +12,6 @@ export const Navbar = () => {
     const ToTop = useRef()
 
     window.onscroll = function () {
-        console.log(window.scrollY)
         setDesplazamiento_Actual(window.pageYOffset)
         if (desplazamiento_Actual >= 380) {
             BgNav.current?.classList.add("color-nav")
@@ -41,48 +40,48 @@ export const Navbar = () => {
     }
     return (
         < >
-            <Container id="nav-bar" ref={BgNav}>
+            <div id="nav-bar" ref={BgNav}>
                 <a href="#index"><img src="/assets/white-arrow.svg" ref={ToTop} className="d-none" id="to-top" /></a>
                 <Row>
-                    <ul className="nav justify-content-center">
-                        <li className="nav-item col-3">
-                            <a href="">
+                    <ul className="nav justify-content-end" style={{width:"80%"}}>
+                        <li className="nav-item col-2 me-5">
+                            <a href="#index">
                                 <img src="/assets/iso.svg" ref={Iso} className="iconos-nav" />
                                 <img src="/assets/logo.svg" ref={Logo} className="d-none" />
                             </a>
                         </li>
-                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                        <li className=" px-4 my-auto" onMouseEnter={handleShow}>
                             <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Cursos</a>
                         </li>
-                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                        <li className=" px-4 my-auto" onMouseEnter={handleShow}>
                             <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Quiénes somos</a>
                         </li>
-                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                        <li className=" px-4 my-auto" onMouseEnter={handleShow}>
                             <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Noticias Frescas</a>
                         </li>
-                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                        <li className=" px-4 my-auto" onMouseEnter={handleShow}>
                             <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href=""><u><b>#Wearedoers</b></u></a>
                         </li>
-                        <li className=" col my-auto" onMouseEnter={handleShow}>
+                        <li className=" ps-4 pe-5 my-auto" onMouseEnter={handleShow}>
                             <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Contacto</a>
                         </li>
-                        <li className=" me-4">
+                        <li className="mx-4">
                             <a href=""><img src="/assets/email.svg" className="iconos-nav" /></a>
                         </li>
-                        <li className=" me-4">
+                        <li className=" mx-4">
                             <a href=""><img src="/assets/instagram.svg" className="iconos-nav" /></a>
                         </li>
-                        <li className="me-4">
+                        <li className="mx-4">
                             <a href=""><img src="/assets/globe.svg" className="iconos-nav" /></a>
                         </li>
                     </ul>
                 </Row>
-            </Container>
+            </div>
         </>
     )
 }

@@ -23,9 +23,11 @@
     z-index: 20;
     border: 0px;
     right: 195px;
+    width: 13%;
     padding: 13px 8px;
 }
 #chat-opcion-2{
+    width: 13%;
     position: fixed;
     background-color: #0D753B;
     color: white;

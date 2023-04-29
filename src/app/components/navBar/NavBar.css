@@ -2,6 +2,7 @@
     position: fixed;
     z-index: 20;
     padding: 15px 0px;
+    width: 100%;
 }
 
 .iconos-nav {
@@ -14,10 +15,7 @@
     color: white;
 }
 
-#nav-bar ul {
-    position: relative;
-    margin: 0% 23%
-}
+
 
 .color-nav{
     background-color:  rgb(255, 31, 87);
@@ -40,4 +38,8 @@
 .hex-blue-nav{
     position: absolute;
     top: -15px;
+    display: none;
+}
+.hex-blue-nav:hover{
+    display: flex;
 }

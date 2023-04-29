@@ -11,28 +11,28 @@ export const Index = () => {
             <img src="assets/magenta-circle.svg" id="circle" />
             <img src="assets/green-trap.svg" id="green-trap" />
             <img src="assets/white-arrow.svg" id="white-arrow2" />
-            <img src="assets/white-arrow-down.svg" id="white-arrow-down" />
+            <a style={{position:"absolute"}} href="#cursos"id="white-arrow-down"><img src="assets/white-arrow-down.svg"/></a>
             <Row className="w-100">
                 <hr />
                 <Col xxl="5" className="ms-auto">
                     <Row style={{ backgroundColor: "white" }}>
-                        <img src="/assets/minus.svg" id="minus" className="col-6" />
-                        <img src="/assets/logo.svg" id="logo" className="col-6" />
+                        <img src="/assets/minus.svg" id="minus" className="col-5" />
+                        <img src="/assets/logo.svg" id="logo" className="col-7 my-auto" />
                     </Row>
                     <hr className="hrs" />
                     <Row>
                         <Col xxl="auto">
                             <h1 className="ms-4">Madrid</h1>
                         </Col>
-                        <Col className="my-auto" xxl="auto">
-                            <img src="/assets/white-arrow2.svg" id="white-arrow" />
+                        <Col className="my-auto ms-4" xxl="auto">
+                            <img src="/assets/white-arrow2.svg" id="white-arrow-madrid"/>
                         </Col>
                     </Row>
                     <hr className="hrs" />
                     <p id="sub-titulo">Doers School</p>
                 </Col>
                 <Col xxl="1" id="dots-col">
-                    <img src="assets/dots.svg" />
+                    <img src="assets/dots.svg" style={{height: "266px"}} />
                 </Col>
                 <Col xxl="4" id="col-botones">
                     <div style={{ position: "absolute" }}>
@@ -66,7 +66,7 @@ export const Index = () => {
                                         <Col xxl="4" className="d-flex justify-content-end">
                                             <p>{`>`}</p>
                                         </Col>
-                                        <p className="col-8 ms-2">Hay plazas disponibles. Apúntate!</p>
+                                        <p className="col-8 ms-2">Quedan pocas plazas. No te quedes fuera!</p>
                                     </Row>
                                 </Col>
                                 <Col xxl="auto">
@@ -75,7 +75,7 @@ export const Index = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xxl="6">
+                        <Col xxl="6" >
                             <marquee>
                                 //ver todos los cursos
                             </marquee>

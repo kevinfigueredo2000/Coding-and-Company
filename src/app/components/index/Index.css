@@ -8,6 +8,7 @@
 
 hr {
     color: white !important;
+    margin: 0px !important;
 }
 
 #index .hrs {
@@ -32,7 +33,7 @@ hr {
 
 #col-botones {
     position: relative;
-    top: 123px;
+    top: 112px;
 }
 
 #sub-titulo {
@@ -51,13 +52,8 @@ hr {
 #dots-col {
     position: absolute;
     right: 31rem;
-    top: 25rem;
+    top: 428px;
 }
-
-/* #col-botones {
-    position: relative;
-    top: 77px;
-} */
 
 #green-trap {
     position: absolute;
@@ -85,7 +81,6 @@ hr {
     left: 17%;
     top: 443px;
     z-index: 1;
-    background-color: black;
 }
 
 #hex-blue {
@@ -121,6 +116,10 @@ hr {
     transform: rotate(230deg);
 }
 
+#white-arrow-madrid {
+    height: 7rem;
+}
+
 #white-arrow-down {
     position: absolute;
     left: 44%;
@@ -128,7 +127,10 @@ hr {
     z-index: 1;
     background-color: black;
 }
-
+.botones-index{
+    padding: 10px;
+}
 .botones-index:hover {
     background-color: #E9E6E1;
+    padding: 10px;
 }
