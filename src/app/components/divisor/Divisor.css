@@ -1,0 +1,7 @@
+.svg-divisor{
+    height:40px;
+}
+#divisor{
+    z-index: 10;
+    position: relative;
+}

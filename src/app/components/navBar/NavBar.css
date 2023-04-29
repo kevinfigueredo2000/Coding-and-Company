@@ -1,0 +1,39 @@
+#nav-bar {
+    position: fixed;
+    z-index: 20;
+    padding: 15px 0px;
+}
+
+.iconos-nav {
+    height: 25px;
+    transform: rotate(90deg);
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar ul {
+    position: relative;
+    margin: 0% 23%
+}
+
+.color-nav{
+    background-color:  rgb(255, 31, 87);
+    transition: 1s;
+}
+.transparente-nav{
+    background-color: transparent;
+}
+#to-top{
+    position: fixed;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #0d734d;
+    height: 40px;
+    width: 40px;
+    bottom: 50px;
+    left: 20px;
+}

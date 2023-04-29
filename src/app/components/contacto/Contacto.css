@@ -1,0 +1,59 @@
+#contacto {
+    background: linear-gradient(to left, white 70%, #E9E6E1 30%);
+}
+
+button {
+    border: 1px solid;
+    padding: 8px 55px;
+    background-image: linear-gradient(to top, #ffffff, #ffffff);
+    transition: background-image 1s ease;
+}
+
+button:hover {
+    color: #e9e6e1;
+    background-image: linear-gradient(to bottom, #383838, #383838);
+    transition: 1s;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid red;
+    transition: 0.3s ease;
+}
+
+h3 {
+    font-size: 24px !important;
+}
+
+h4 {
+    font-size: 16px
+}
+
+#contacto select {
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    /* para dejar espacio para la flecha */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#sos-lo-que-haces {
+    font-size: 48px !important;
+}
+
+#contacto .row {
+    padding: 6rem 0px;
+}

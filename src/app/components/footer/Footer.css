@@ -1,0 +1,48 @@
+.prueba {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cursos {
+    border-left: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contacto {
+    border-right: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.iconos-redes {
+    height: 35px;
+    transform: rotate(90deg);
+    color: #707070;
+}
+
+.texto-footer {
+    color: #707070;
+}
+
+#footer-nav {
+    background-color: #FF1F57;
+}
+
+#footer {
+    background-color: #383838;
+}
+
+#white-logo-col {
+    display: grid;
+    justify-content: center;
+}
+
+#col-redes {
+    display: grid;
+    justify-content: center;
+    top: -6px;
+    position: relative;
+}

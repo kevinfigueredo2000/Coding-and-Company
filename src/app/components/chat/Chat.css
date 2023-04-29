@@ -1,0 +1,38 @@
+#chat {
+    position: fixed;
+    background-color: #0E64BA;
+    color: white;
+    bottom: 40px;
+    z-index: 20;
+    border: 0px;
+    right: 195px;
+    padding: 13px 8px;
+    border-radius: 15px 0px 0px 0px;
+}
+
+#chat:hover {
+    background-color: #E1DF3C;
+    color: black;
+    cursor:pointer;
+}
+#chat-opcion-1{
+    position: fixed;
+    background-color: #E6511B;
+    color: white;
+    bottom:91px;
+    z-index: 20;
+    border: 0px;
+    right: 195px;
+    padding: 13px 8px;
+}
+#chat-opcion-2{
+    position: fixed;
+    background-color: #0D753B;
+    color: white;
+    bottom: 141px;
+    z-index: 20;
+    border: 0px;
+    right: 195px;
+    padding: 13px 8px;
+
+}
