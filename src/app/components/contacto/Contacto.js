@@ -10,7 +10,7 @@ export const Contacto = () => {
                 <Row>
                     <Col xxl="6" md="5" sm="12" className="me-auto">
                         <h2 className="ms-5 my-2" id="sos-lo-que-haces">#Sosloquehacés</h2>
-                        <Image className="my-5" href="assets/bear-misc.svg" alt="bear-misc"/>
+                        <Image width={0} height={0} className="my-5" src="/assets/bear-misc.svg" alt="bear-misc"/>
                     </Col>
                     <Col xxl="5" md="5" sm="12">
                     <h3><b>¿Quieres saber más sobre nuestros cursos?</b></h3>

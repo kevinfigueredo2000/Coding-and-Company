@@ -32,7 +32,7 @@ export const Chat = () => {
             </Row>
             <Row id="chat" onClick={handleShow}>
                 <Col xxl="3">
-                    <Image href="assets/chat.svg" alt="chat"/>
+                    <Image width={0} height={0}src="/assets/chat.svg" alt="chat"/>
                 </Col>
                 <Col xxl="9">
                     <span>Hola, Bro :{`)`}</span>

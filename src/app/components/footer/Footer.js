@@ -30,15 +30,15 @@ export const Footer = () => {
                 <Container>
                     <Row className="pt-4">
                         <Col xxl="4" md="4" sm="4" className="my-2">
-                            <Image alt="email" href="/assets/email.svg" className="iconos-redes mx-3" />
-                            <Image alt="instagram" href="/assets/instagram.svg" className="iconos-redes mx-3" />
-                            <Image alt="globe" href="/assets/globe.svg" className="iconos-redes mx-3" />
+                            <Image width={0} height={0} alt="email" src="/assets/email.svg" className="iconos-redes mx-3" />
+                            <Image width={0} height={0} alt="instagram" src="/assets/instagram.svg" className="iconos-redes mx-3" />
+                            <Image width={0} height={0} alt="globe" src="/assets/globe.svg" className="iconos-redes mx-3" />
                             <p className="texto-footer mt-4">
                                 2021 brother Madrid
                             </p>
                         </Col>
                         <Col xxl="4" md="4" sm="4" id="white-logo-col">
-                            <Image alt="white-logo" href="/assets/white-logo.svg" />
+                            <Image width={0} height={0} alt="white-logo" src="/assets/white-logo.svg" />
                         </Col>
                         <Col xxl="4" md="4" sm="4" id="col-redes">
                             <span className="texto-footer">Calle Gran Vía 27, 28013 Madrid.</span>
