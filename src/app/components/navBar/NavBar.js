@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap"
 import "./NavBar.css"
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export const Navbar = () => {
@@ -12,29 +12,37 @@ export const Navbar = () => {
     const Iso = useRef()
     const ToTop = useRef()
 
-    window.onscroll = function () {
-        setDesplazamiento_Actual(window.pageYOffset)
-        if (desplazamiento_Actual >= 380) {
-            BgNav.current?.classList.add("color-nav")
-            BgNav.current?.classList.remove("transparente-nav")
-            Logo.current?.classList.add("d-show")
-            Logo.current?.classList.remove("d-none")
-            Iso.current?.classList.add("d-none")
-            Iso.current?.classList.remove("d-show")
-            ToTop.current?.classList.add("d-show")
-            ToTop.current?.classList.remove("d-none")
-        } else {
-            BgNav.current?.classList.remove("color-nav")
-            BgNav.current?.classList.add("transparente-nav")
-            Logo.current?.classList.add("d-none")
-            Logo.current?.classList.remove("d-show")
-            Iso.current?.classList.add("d-show")
-            Iso.current?.classList.remove("d-none")
-            ToTop.current?.classList.add("d-none")
-            ToTop.current?.classList.remove("d-show")
-        }
-        setUbicacionPrincipal(desplazamiento_Actual);
-    }
+    useEffect(() => {
+        const handleScroll = () => {
+          setDesplazamiento_Actual(window?.pageYOffset);
+          if (desplazamiento_Actual >= 380) {
+            BgNav.current?.classList.add("color-nav");
+            BgNav.current?.classList.remove("transparente-nav");
+            Logo.current?.classList.add("d-show");
+            Logo.current?.classList.remove("d-none");
+            Iso.current?.classList.add("d-none");
+            Iso.current?.classList.remove("d-show");
+            ToTop.current?.classList.add("d-show");
+            ToTop.current?.classList.remove("d-none");
+          } else {
+            BgNav.current?.classList.remove("color-nav");
+            BgNav.current?.classList.add("transparente-nav");
+            Logo.current?.classList.add("d-none");
+            Logo.current?.classList.remove("d-show");
+            Iso.current?.classList.add("d-show");
+            Iso.current?.classList.remove("d-none");
+            ToTop.current?.classList.add("d-none");
+            ToTop.current?.classList.remove("d-show");
+          }
+          setUbicacionPrincipal(desplazamiento_Actual);
+        };
+    
+        window?.addEventListener("scroll", handleScroll);
+    
+        return () => {
+          window?.removeEventListener("scroll", handleScroll);
+        };
+      }, [desplazamiento_Actual]);
 
     const handleShow = () => {
         display === "d-none" ? setDisplay("d-block") : setDisplay("d-none")
