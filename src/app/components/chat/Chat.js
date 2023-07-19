@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa"
 import { BiErrorCircle } from "react-icons/bi"
 import "./Chat.css"
+import Image from "next/image";
 
 export const Chat = () => {
     const [display, setDisplay] = useState("d-none");
@@ -31,7 +32,7 @@ export const Chat = () => {
             </Row>
             <Row id="chat" onClick={handleShow}>
                 <Col xxl="3">
-                    <img src="assets/chat.svg" />
+                    <Image href="assets/chat.svg" />
                 </Col>
                 <Col xxl="9">
                     <span>Hola, Bro :{`)`}</span>

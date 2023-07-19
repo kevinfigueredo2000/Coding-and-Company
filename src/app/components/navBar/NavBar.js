@@ -1,6 +1,7 @@
 import { Container, Row } from "react-bootstrap"
 import "./NavBar.css"
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 export const Navbar = () => {
     const [display, setDisplay] = useState("d-none");
@@ -41,43 +42,43 @@ export const Navbar = () => {
     return (
         < >
             <div id="nav-bar" ref={BgNav}>
-                <a href="#index"><img src="/assets/white-arrow.svg" ref={ToTop} className="d-none" id="to-top" /></a>
+                <a href="#index"><Image href="/assets/white-arrow.svg" ref={ToTop} className="d-none" id="to-top" /></a>
                 <Row>
                     <ul className="nav justify-content-end" style={{width:"80%"}}>
                         <li className="nav-item col-2 me-5">
                             <a href="#index">
-                                <img src="/assets/iso.svg" ref={Iso} className="iconos-nav" />
-                                <img src="/assets/logo.svg" ref={Logo} className="d-none" />
+                                <Image href="/assets/iso.svg" ref={Iso} className="iconos-nav" />
+                                <Image href="/assets/logo.svg" ref={Logo} className="d-none" />
                             </a>
                         </li>
                         <li className=" px-4 my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
+                            <Image href="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Cursos</a>
                         </li>
                         <li className=" px-4 my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
+                            <Image href="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Quiénes somos</a>
                         </li>
                         <li className=" px-4 my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
+                            <Image href="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Noticias Frescas</a>
                         </li>
                         <li className=" px-4 my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
+                            <Image href="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href=""><u><b>#Wearedoers</b></u></a>
                         </li>
                         <li className=" ps-4 pe-5 my-auto" onMouseEnter={handleShow}>
-                            <img src="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
+                            <Image href="/assets/hex-blue.svg" className={`${display} hex-blue-nav`} />
                             <a href="">Contacto</a>
                         </li>
                         <li className="mx-4">
-                            <a href=""><img src="/assets/email.svg" className="iconos-nav" /></a>
+                            <a href=""><Image href="/assets/email.svg" className="iconos-nav" /></a>
                         </li>
                         <li className=" mx-4">
-                            <a href=""><img src="/assets/instagram.svg" className="iconos-nav" /></a>
+                            <a href=""><Image href="/assets/instagram.svg" className="iconos-nav" /></a>
                         </li>
                         <li className="mx-4">
-                            <a href=""><img src="/assets/globe.svg" className="iconos-nav" /></a>
+                            <a href=""><Image href="/assets/globe.svg" className="iconos-nav" /></a>
                         </li>
                     </ul>
                 </Row>

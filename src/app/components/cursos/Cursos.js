@@ -1,13 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap"
 import "./Cursos.css"
+import Image from "next/image"
 
 export const Cursos = () => {
     return (
         <section id="cursos" className="py-4">
-            <img src="assets/yellow-trap.svg" id="yellow-trap"/>
-            <img src="assets/yellow-hex-full.svg" id="yellow-hex-full"/>
-            <img src="assets/cloud.svg" id="cloud"/>
-            <img src="assets/yellow-asterisk-big.svg" id="yellow-asterisk"/>
+            <Image href="assets/yellow-trap.svg" id="yellow-trap"/>
+            <Image href="assets/yellow-hex-full.svg" id="yellow-hex-full"/>
+            <Image href="assets/cloud.svg" id="cloud"/>
+            <Image href="assets/yellow-asterisk-big.svg" id="yellow-asterisk"/>
             <Container>
                 <Row>
                     <Col xxl="4" lg="4" md="12">
@@ -36,34 +37,34 @@ export const Cursos = () => {
                             <Col xxl="10" md="11" sm="11">
                                 <Row className="mt-2">
                                     <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <img src="assets/thumb-02.jpg" height="144px" width="144px" />
+                                        <Image href="assets/thumb-02.jpg" height="144px" width="144px" />
                                         <p className="col-8">Curso anual de Creatividad</p>
                                     </article>
                                     <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <img src="assets/thumb-03.jpg" height="144px" width="144px" />
+                                        <Image href="assets/thumb-03.jpg" height="144px" width="144px" />
                                         <p className="col-8">Planificación y Estrategia Creativa 2021</p>
                                     </article>
                                     <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <img src="assets/thumb-01.jpg" height="144px" width="144px" />
+                                        <Image href="assets/thumb-01.jpg" height="144px" width="144px" />
                                         <p className="col-8">Pr & Comunicación 2021</p>
                                     </article>
                                     <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <img src="assets/thumb-05.jpg" height="144px" width="144px" />
+                                        <Image href="assets/thumb-05.jpg" height="144px" width="144px" />
                                         <p className="col-8">Digital y social Media</p>
                                     </article>
                                     <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <img src="assets/thumb-06.jpg" height="144px" width="144px" />
+                                        <Image href="assets/thumb-06.jpg" height="144px" width="144px" />
                                         <p className="col-8">Design Thinking</p>
                                     </article>
                                     <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <img src="assets/thumb-04.jpg" height="144px" width="144px" />
+                                        <Image href="assets/thumb-04.jpg" height="144px" width="144px" />
                                         <p className="col-8">Planificación y Estrategia Creativa</p>
                                     </article>
                                 </Row>
                             </Col>
                             <Col xxl="1" md="1" sm="1" className="mt-2">
-                                <img src="assets/white-arrow.svg" className="mb-4 flechas-cursos"></img>
-                                <img src="assets/white-arrow.svg" className="mb-4 flechas-cursos" id="white-arrow-down-cursos"></img>
+                                <Image href="assets/white-arrow.svg" className="mb-4 flechas-cursos"/>
+                                <Image href="assets/white-arrow.svg" className="mb-4 flechas-cursos" id="white-arrow-down-cursos"/>
                             </Col>
                         </Row>
                     </Col>

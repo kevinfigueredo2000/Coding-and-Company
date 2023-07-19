@@ -1,5 +1,6 @@
 import { Col, Container, Form, Row } from "react-bootstrap"
 import "./Contacto.css"
+import Image from "next/image"
 
 export const Contacto = () => {
 //onFocus cambiar de color el border-bottom
@@ -9,7 +10,7 @@ export const Contacto = () => {
                 <Row>
                     <Col xxl="6" md="5" sm="12" className="me-auto">
                         <h2 className="ms-5 my-2" id="sos-lo-que-haces">#Sosloquehacés</h2>
-                        <img className="my-5" src="assets/bear-misc.svg" />
+                        <Image className="my-5" href="assets/bear-misc.svg" />
                     </Col>
                     <Col xxl="5" md="5" sm="12">
                     <h3><b>¿Quieres saber más sobre nuestros cursos?</b></h3>

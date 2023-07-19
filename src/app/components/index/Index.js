@@ -1,23 +1,24 @@
 import { Col, Row } from "react-bootstrap"
 import "./Index.css";
+import Image from "next/image";
 
 export const Index = () => {
     return (
         <section id="index">
-            <img src="assets/blue-asterisk.svg" id="red-asterisk" />
-            <img src="assets/blue-asterisk.svg" id="blue-asterisk" />
-            <img src="assets/yellow-hex.svg" id="yellow-hex1" />
-            <img src="assets/hex-blue.svg" id="hex-blue" />
-            <img src="assets/magenta-circle.svg" id="circle" />
-            <img src="assets/green-trap.svg" id="green-trap" />
-            <img src="assets/white-arrow.svg" id="white-arrow2" />
-            <a style={{position:"absolute"}} href="#cursos"id="white-arrow-down"><img src="assets/white-arrow-down.svg"/></a>
+            <Image href="assets/blue-asterisk.svg" id="red-asterisk" />
+            <Image href="assets/blue-asterisk.svg" id="blue-asterisk" />
+            <Image href="assets/yellow-hex.svg" id="yellow-hex1" />
+            <Image href="assets/hex-blue.svg" id="hex-blue" />
+            <Image href="assets/magenta-circle.svg" id="circle" />
+            <Image href="assets/green-trap.svg" id="green-trap" />
+            <Image href="assets/white-arrow.svg" id="white-arrow2" />
+            <a style={{position:"absolute"}} href="#cursos"id="white-arrow-down"><Image href="assets/white-arrow-down.svg"/></a>
             <Row className="w-100">
                 <hr />
                 <Col xxl="5" className="ms-auto">
                     <Row style={{ backgroundColor: "white" }}>
-                        <img src="/assets/minus.svg" id="minus" className="col-5" />
-                        <img src="/assets/logo.svg" id="logo" className="col-7 my-auto" />
+                        <Image href="/assets/minus.svg" id="minus" className="col-5" />
+                        <Image href="/assets/logo.svg" id="logo" className="col-7 my-auto" />
                     </Row>
                     <hr className="hrs" />
                     <Row>
@@ -25,18 +26,18 @@ export const Index = () => {
                             <h1 className="ms-4">Madrid</h1>
                         </Col>
                         <Col className="my-auto ms-4" xxl="auto">
-                            <img src="/assets/white-arrow2.svg" id="white-arrow-madrid"/>
+                            <Image href="/assets/white-arrow2.svg" id="white-arrow-madrid"/>
                         </Col>
                     </Row>
                     <hr className="hrs" />
                     <p id="sub-titulo">Doers School</p>
                 </Col>
                 <Col xxl="1" id="dots-col">
-                    <img src="assets/dots.svg" style={{height: "266px"}} />
+                    <Image href="assets/dots.svg" style={{height: "266px"}} />
                 </Col>
                 <Col xxl="4" id="col-botones">
                     <div style={{ position: "absolute" }}>
-                        <img src="assets/yellow-hex.svg" id="orange-hex" />
+                        <Image href="assets/yellow-hex.svg" id="orange-hex" />
                     </div>
                     <Row>
                         <Col xxl="10">

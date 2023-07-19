@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import "./Footer.css"
+import Image from "next/image"
 
 export const Footer = () => {
     return (
@@ -29,15 +30,15 @@ export const Footer = () => {
                 <Container>
                     <Row className="pt-4">
                         <Col xxl="4" md="4" sm="4" className="my-2">
-                            <img src="/assets/email.svg" className="iconos-redes mx-3" />
-                            <img src="/assets/instagram.svg" className="iconos-redes mx-3" />
-                            <img src="/assets/globe.svg" className="iconos-redes mx-3" />
+                            <Image href="/assets/email.svg" className="iconos-redes mx-3" />
+                            <Image href="/assets/instagram.svg" className="iconos-redes mx-3" />
+                            <Image href="/assets/globe.svg" className="iconos-redes mx-3" />
                             <p className="texto-footer mt-4">
                                 2021 brother Madrid
                             </p>
                         </Col>
                         <Col xxl="4" md="4" sm="4" id="white-logo-col">
-                            <img src="/assets/white-logo.svg" />
+                            <Image href="/assets/white-logo.svg" />
                         </Col>
                         <Col xxl="4" md="4" sm="4" id="col-redes">
                             <span className="texto-footer">Calle Gran Vía 27, 28013 Madrid.</span>
