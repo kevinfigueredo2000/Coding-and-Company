@@ -14,7 +14,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-          setDesplazamiento_Actual(window?.pageYOffset);
+            window && setDesplazamiento_Actual(window.pageYOffset);
           if (desplazamiento_Actual >= 380) {
             BgNav.current?.classList.add("color-nav");
             BgNav.current?.classList.remove("transparente-nav");
