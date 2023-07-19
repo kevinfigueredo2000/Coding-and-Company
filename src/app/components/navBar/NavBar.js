@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Navbar = () => {
     const [display, setDisplay] = useState("d-none");
-    const [ubicacionPrincipal, setUbicacionPrincipal] = useState(window?.pageYOffset);
+    const [ubicacionPrincipal, setUbicacionPrincipal] = useState();
     const [desplazamiento_Actual, setDesplazamiento_Actual] = useState(0);
     const BgNav = useRef()
     const Logo = useRef()
