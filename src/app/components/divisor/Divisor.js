@@ -9,23 +9,23 @@ export const Divisor = (prop) => {
                 <Row className="w-100 py-3">
                     <Col>
                         <Row>
-                            <Image href={`assets/${prop?.divisor[0]}.svg`} className="col svg-divisor" />
+                            <Image alt={prop?.divisor[0]} href={`assets/${prop?.divisor[0]}.svg`} className="col svg-divisor" />
                             <h3 className="col my-auto" style={prop.section === "cursos" ? { color: "#E9E6E1" } : { color: "#E1DF3C" }}>Chequea todos los cursos</h3>
-                            <Image href={`assets/${prop?.divisor[1]}.svg`} className="col svg-divisor" />
+                            <Image alt={prop?.divisor[0]} href={`assets/${prop?.divisor[1]}.svg`} className="col svg-divisor" />
                         </Row>
                     </Col>
                     <Col>
                         <Row>
-                            <Image href={`assets/${prop?.divisor[0]}.svg`} className="col svg-divisor" />
+                            <Image alt={`assets/${prop?.divisor[0]}.svg`} href={`assets/${prop?.divisor[0]}.svg`} className="col svg-divisor" />
                             <h3 className="col my-auto" style={prop.section === "cursos" ? { color: "#E9E6E1" } : { color: "#E1DF3C" }}>Chequea todos los cursos</h3>
-                            <Image href={`assets/${prop?.divisor[1]}.svg`} className="col svg-divisor" />
+                            <Image alt={prop?.divisor[0]} href={`assets/${prop?.divisor[1]}.svg`} className="col svg-divisor" />
                         </Row>
                     </Col>
                     <Col>
                         <Row>
-                            <Image href={`assets/${prop?.divisor[0]}.svg`} className="col svg-divisor" />
+                            <Image alt={prop?.divisor[0]} href={`assets/${prop?.divisor[0]}.svg`} className="col svg-divisor" />
                             <h3 className="col my-auto" style={prop.section === "cursos" ? { color: "#E9E6E1" } : { color: "#E1DF3C" }}>Chequea todos los cursos</h3>
-                            <Image href={`assets/${prop?.divisor[1]}.svg`} className="col svg-divisor" />
+                            <Image alt={prop?.divisor[0]} href={`assets/${prop?.divisor[1]}.svg`} className="col svg-divisor" />
                         </Row>
                     </Col>
                 </Row>
