@@ -48,7 +48,7 @@ export const Index = () => {
                                             <h5>Curso Anual de Creatividad</h5>
                                         </Col>
                                         <Col xxl="4" className="d-flex justify-content-end">
-                                            <p>{`>`}</p>
+                                            <p>{'>'}</p>
                                         </Col>
                                         <p className="col-8 ms-2">Hay plazas disponibles. Apúntate!</p>
                                     </Row>
@@ -65,7 +65,7 @@ export const Index = () => {
                                             <h5>Curso Anual de Creatividad</h5>
                                         </Col>
                                         <Col xxl="4" className="d-flex justify-content-end">
-                                            <p>{`>`}</p>
+                                            <p>{'>'}</p>
                                         </Col>
                                         <p className="col-8 ms-2">Quedan pocas plazas. No te quedes fuera!</p>
                                     </Row>
@@ -78,7 +78,7 @@ export const Index = () => {
                     <Row>
                         <Col xxl="6" >
                             <marquee>
-                                //ver todos los cursos
+                                {'//ver todos los cursos'}
                             </marquee>
                         </Col>
                     </Row>
