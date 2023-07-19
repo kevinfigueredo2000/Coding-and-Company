@@ -12,8 +12,8 @@ export const Navbar = () => {
     const Iso = useRef()
     const ToTop = useRef()
 
-    window.onscroll = function () {
-        setDesplazamiento_Actual(window.pageYOffset)
+    window?.onscroll = function () {
+        setDesplazamiento_Actual(window?.pageYOffset)
         if (desplazamiento_Actual >= 380) {
             BgNav.current?.classList.add("color-nav")
             BgNav.current?.classList.remove("transparente-nav")
