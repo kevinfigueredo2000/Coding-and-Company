@@ -37,9 +37,17 @@
 }
 .hex-blue-nav{
     position: absolute;
-    top: -15px;
     display: none;
+    top: 1px;
 }
 .hex-blue-nav:hover{
     display: flex;
+    justify-content: center;
+}
+
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
 }
