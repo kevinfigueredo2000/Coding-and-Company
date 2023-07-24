@@ -6,7 +6,7 @@
 }
 
 .borde-news {
-    border: 8px solid;
+    border: 8px solid #272727;
     flex-basis: content;
 }
 

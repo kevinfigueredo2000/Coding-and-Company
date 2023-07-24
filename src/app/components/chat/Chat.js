@@ -14,7 +14,7 @@ export const Chat = () => {
 
     return (
         <>
-            <Row className={`${display}`} href="" id="chat-opcion-1">
+            <Row className={`${display}`}id="chat-opcion-1">
                 <Col xxl="1">
                     <BiErrorCircle />
                 </Col>
@@ -22,7 +22,7 @@ export const Chat = () => {
                     <p>Completa el formulario</p>
                 </Col>
             </Row>
-            <Row className={`${display}`} href="" id="chat-opcion-2">
+            <Row className={`${display}`} id="chat-opcion-2">
                 <Col xxl="1">
                     <FaWhatsapp />
                 </Col>
@@ -32,7 +32,7 @@ export const Chat = () => {
             </Row>
             <Row id="chat" onClick={handleShow}>
                 <Col xxl="3">
-                    <Image width={0} height={0}src="/assets/chat.svg" alt="chat"/>
+                    <Image width={20} height={20}src="/assets/svg/chat.svg" alt="chat"/>
                 </Col>
                 <Col xxl="9">
                     <span>Hola, Bro :{`)`}</span>
