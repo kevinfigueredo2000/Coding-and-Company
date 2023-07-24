@@ -69,7 +69,7 @@ export const Navbar = () => {
                         {Itemlist.map((i, index)=>{
                             return(
                         <li className=" px-4 my-auto" onMouseEnter={()=> setDisplay(index)} onMouseLeave={() => setDisplay(null)}>
-                            <Image width={70} height={60} src="/assets/svg/hex-blue.svg" alt="hex-blue" id={index} className={`${i === "#wearedoers" || display === index ? 'show' : ''} hex-blue-nav`} />
+                            <Image width={70} height={60} src="/assets/svg/hex-blue.svg" alt="hex-blue" key={index} className={`${i === "#wearedoers" || display === index ? 'show' : ''} hex-blue-nav`} />
                             <Link href="">{i}</Link>
                         </li>
                         )
