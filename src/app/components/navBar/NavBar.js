@@ -68,8 +68,8 @@ export const Navbar = () => {
                         </li>
                         {Itemlist.map((i, index)=>{
                             return(
-                        <li className=" px-4 my-auto" onMouseEnter={()=> setDisplay(index)} onMouseLeave={() => setDisplay(null)}>
-                            <Image width={70} height={60} src="/assets/svg/hex-blue.svg" alt="hex-blue" key={i} className={`${i === "#wearedoers" || display === index ? 'show' : ''} hex-blue-nav`} />
+                        <li className=" px-4 my-auto" onMouseEnter={()=> setDisplay(index)} onMouseLeave={() => setDisplay(null)} key={index}>
+                            <Image width={70} height={60} src="/assets/svg/hex-blue.svg" alt="hex-blue" id={index} className={`${i === "#wearedoers" || display === index ? 'show' : ''} hex-blue-nav`} />
                             <Link href="">{i}</Link>
                         </li>
                         )
