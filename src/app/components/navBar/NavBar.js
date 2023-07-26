@@ -59,7 +59,7 @@ export const Navbar = () => {
             <div id="nav-bar" ref={BgNav}>
                 <Link href="#index"><Image src="/assets/svg/white-arrow.svg" width={15} height={15} ref={ToTop} alt="white-arrow" className="d-none" id="to-top" /></Link>
                 <Row>
-                    <ul className="nav justify-content-end" style={{ width: "80%" }}>
+                    <ul className="nav justify-content-end" style={{ width: "90%", position: "relative", right: "13rem" }}>
                         <li className="nav-item col-2 me-5">
                             <Link href="#index">
                                 <Image src="/assets/svg/iso.svg" width={20} height={20} ref={Iso} alt="iso" className="iconos-nav" />

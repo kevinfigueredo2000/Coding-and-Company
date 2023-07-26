@@ -63,8 +63,8 @@ export const Cursos = () => {
                                 </Row>
                             </Col>
                             <Col xxl="1" md="1" sm="1" className="mt-2">
-                                <span className="mb-4 flechas-cursos"><Image width={25} height={60} alt="white-arrow" src="/assets/svg/white-arrow.svg"/></span>
-                                <span className="mb-4 flechas-cursos"><Image width={25} height={60} alt="white-arrow" src="/assets/svg/white-arrow.svg"  id="white-arrow-down-cursos"/></span>
+                                <Row className="mb-4 flechas-cursos"><Image width={25} height={40} className="w-90 m-auto" alt="white-arrow" src="/assets/svg/white-arrow.svg"/></Row>
+                                <Row className="mb-4 flechas-cursos"><Image width={25} height={40} className="w-90 m-auto" alt="white-arrow" src="/assets/svg/white-arrow.svg"  id="white-arrow-down-cursos"/></Row>
                             </Col>
                         </Row>
                     </Col>

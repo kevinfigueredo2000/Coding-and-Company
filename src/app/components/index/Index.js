@@ -12,8 +12,7 @@ export const Index = () => {
             <Image width={100} height={100} alt="hex-blue" src="/assets/svg/hex-blue.svg" id="hex-blue" />
             <Image width={100} height={100} alt="magenta-circle" src="/assets/svg/magenta-circle.svg" id="circle" />
             <Image width={100} height={100} alt="green-trapp" src="/assets/svg/green-trap.svg" id="green-trap" />
-            <Image width={100} height={100} alt="white-arrow" src="/assets/svg/white-arrow1.svg" id="white-arrow2" style={{fill:"#ffff", stroke:"white"}}/>
-            <Link style={{position:"absolute"}} href="#cursos"id="white-arrow-down"><Image alt="white-arrow-down" src="/assets/svg/white-arrow-down.svg" width={0} height={0}/></Link>
+            <Image width={100} height={100} alt="white-arrow" src="/assets/svg/white-arrow1.svg" id="white-arrow2" style={{ stroke: "white" }} />
             <Row className="w-100">
                 <hr />
                 <Col xxl="5" className="ms-auto">
@@ -27,14 +26,11 @@ export const Index = () => {
                             <h1 className="ms-4">Madrid</h1>
                         </Col>
                         <Col className="my-auto ms-4" xxl="auto">
-                            <Image width={100} height={100} alt="white-arrow2" src="/assets/svg/white-arrow2.svg" id="white-arrow-madrid"/>
+                            <Image width={100} height={100} alt="white-arrow2" src="/assets/svg/white-arrow2.svg" id="white-arrow-madrid" />
                         </Col>
                     </Row>
                     <hr className="hrs" />
                     <p id="sub-titulo">Doers School</p>
-                </Col>
-                <Col xxl="1" id="dots-col">
-                    <Image width={100} height={100} alt="dots" src="/assets/svg/dots.svg" style={{height: "266px"}} />
                 </Col>
                 <Col xxl="4" id="col-botones">
                     <div style={{ position: "absolute" }}>
@@ -43,7 +39,10 @@ export const Index = () => {
                     <Row>
                         <Col xxl="10">
                             <Row>
-                                <Col xxl="8" className="botones-index">
+                                <Col xxl="1" id="dots-col">
+                                    <Image width={100} height={100} alt="dots" src="/assets/svg/dots.svg" style={{ height: "30vh" }} />
+                                </Col>
+                                <Col xxl="7" className="botones-index">
                                     <Row>
                                         <Col xxl="6" className="ms-2">
                                             <h5>Curso Anual de Creatividad</h5>
@@ -60,7 +59,7 @@ export const Index = () => {
                         </Col>
                         <Col xxl="10">
                             <Row>
-                                <Col xxl="8" className="botones-index">
+                                <Col xxl="7" className="botones-index">
                                     <Row>
                                         <Col xxl="6" className="ms-2">
                                             <h5>Curso Anual de Creatividad</h5>
@@ -76,6 +75,7 @@ export const Index = () => {
                             </Row>
                         </Col>
                     </Row>
+                    <hr style={{position:"absolute", width:"119rem", right:"0"}}/>
                     <Row>
                         <Col xxl="6" >
                             <marquee>
@@ -85,6 +85,7 @@ export const Index = () => {
                     </Row>
                 </Col>
             </Row>
+            <Link href="#cursos" id="white-arrow-down"><Image alt="white-arrow-down" src="/assets/svg/white-arrow-down.svg" width={100} height={50}  style={{ position: "absolute" }} /></Link>
         </section >
     )
 }

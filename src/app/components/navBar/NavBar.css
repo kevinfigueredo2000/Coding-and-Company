@@ -38,8 +38,11 @@
 .hex-blue-nav{
     position: absolute;
     display: none;
-    top: 1px;
+    bottom: -18px;
+    z-index: -1;
+    margin-left: 10px;
 }
+
 .hex-blue-nav:hover{
     display: flex;
     justify-content: center;

@@ -51,8 +51,7 @@ hr {
 
 #dots-col {
     position: absolute;
-    right: 31rem;
-    top: 428px;
+    right: 648px;
 }
 
 #green-trap {
@@ -123,7 +122,7 @@ hr {
 #white-arrow-down {
     position: absolute;
     left: 44%;
-    bottom: 28px;
+    bottom: 7rem;
     z-index: 1;
     background-color: black;
 }
@@ -132,5 +131,4 @@ hr {
 }
 .botones-index:hover {
     background-color: #E9E6E1;
-    padding: 10px;
 }

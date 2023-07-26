@@ -5,10 +5,10 @@ import Image from "next/image";
 export const NoticiasFrescas = () => {
     return (
         <section id="noticias-frescas">
-            <Image width={0} height={0} alt="magenta-cloud" src="/assets/svg/magenta-cloud.svg" id="magenta-cloud"/>
-            <Image width={0} height={0} alt="magenta-circle" src="/assets/svg/magenta-circle.svg" id="magenta-circle"/>
-            <Image width={0} height={0} alt="magenta-circle2" src="/assets/svg/magenta-circle2.svg" id="magenta-circle-2"/>
-            <Image width={0} height={0} alt="cloud" src="/assets/svg/cloud.svg" id="cloud-noticias-frescas"/>
+            <Image width={450} height={450} alt="magenta-cloud" src="/assets/svg/magenta-cloud.svg" id="magenta-cloud"/>
+            <Image width={450} height={450} alt="magenta-circle" src="/assets/svg/magenta-circle.svg" id="magenta-circle"/>
+            <Image width={450} height={450} alt="magenta-circle2" src="/assets/svg/magenta-circle2.svg" id="magenta-circle-2"/>
+            <Image width={450} height={450} alt="cloud" src="/assets/svg/cloud.svg" id="cloud-noticias-frescas"/>
             <Container>
                 <Row>
                     <h2 className="text-center">Noticias Frescas</h2>
