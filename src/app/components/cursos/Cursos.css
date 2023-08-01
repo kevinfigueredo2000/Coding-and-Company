@@ -36,7 +36,7 @@
     transform: rotate(45deg);
     border-radius: unset;
 }
-#white-arrow-down-cursos {
+.white-arrow-down-cursos {
     transform: rotate(180deg);
 }
 
@@ -52,4 +52,12 @@
     left: 390px;
     top: -13px;
     z-index: 1;
+}
+
+.arrow{
+    transform: rotate(316deg);
+}
+
+.arrow1{
+    transform: rotate(135deg);
 }

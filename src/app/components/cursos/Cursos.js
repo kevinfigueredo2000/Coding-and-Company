@@ -1,14 +1,19 @@
 import { Col, Container, Row } from "react-bootstrap"
 import "./Cursos.css"
 import Image from "next/image"
+import { useState } from "react"
 
 export const Cursos = () => {
+
+    const [transformArrowDown, setTransformArrowDown] = useState("white-arrow-down-cursos")
+    const [transformArrow, setTransformArrow] = useState()
+
     return (
         <section id="cursos" className="py-4">
-            <Image width={100} height={100} alt="yellow-trap" src="/assets/svg/yellow-trap.svg" id="yellow-trap"/>
-            <Image width={100} height={100} alt="yellow-hex-full" src="/assets/svg/yellow-hex-full.svg" id="yellow-hex-full"/>
-            <Image width={100} height={100} alt="cloud" src="/assets/svg/cloud.svg" id="cloud"/>
-            <Image width={100} height={100} alt="yellow-asterisk-big" src="/assets/svg/yellow-asterisk-big.svg" id="yellow-asterisk"/>
+            <Image width={100} height={100} alt="yellow-trap" src="/assets/svg/yellow-trap.svg" id="yellow-trap" />
+            <Image width={100} height={100} alt="yellow-hex-full" src="/assets/svg/yellow-hex-full.svg" id="yellow-hex-full" />
+            <Image width={100} height={100} alt="cloud" src="/assets/svg/cloud.svg" id="cloud" />
+            <Image width={100} height={100} alt="yellow-asterisk-big" src="/assets/svg/yellow-asterisk-big.svg" id="yellow-asterisk" />
             <Container>
                 <Row>
                     <Col xxl="4" lg="4" md="12">
@@ -63,8 +68,12 @@ export const Cursos = () => {
                                 </Row>
                             </Col>
                             <Col xxl="1" md="1" sm="1" className="mt-2">
-                                <Row className="mb-4 flechas-cursos"><Image width={25} height={40} className="w-90 m-auto" alt="white-arrow" src="/assets/svg/white-arrow.svg"/></Row>
-                                <Row className="mb-4 flechas-cursos"><Image width={25} height={40} className="w-90 m-auto" alt="white-arrow" src="/assets/svg/white-arrow.svg"  id="white-arrow-down-cursos"/></Row>
+                                <Row className="mb-4 flechas-cursos" style={{width:"130%"}} onMouseEnter={()=> setTransformArrow("arrow")} onMouseLeave={()=> setTransformArrow("")}>
+                                    <Image width={25} height={40} className={`col-11 m-auto ${transformArrow}`} alt="white-arrow" src="/assets/svg/white-arrow.svg" />
+                                </Row>
+                                <Row className="mb-4 flechas-cursos" style={{width:"130%"}} onMouseEnter={()=> setTransformArrowDown("arrow1")} onMouseLeave={()=> setTransformArrowDown("white-arrow-down-cursos")}>
+                                    <Image width={25} height={40} className={`col-11 m-auto ${transformArrowDown}`} alt="white-arrow" src="/assets/svg/white-arrow.svg" id="white-arrow-down-cursos" />
+                                </Row>
                             </Col>
                         </Row>
                     </Col>
