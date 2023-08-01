@@ -41,7 +41,7 @@ export const Contacto = () => {
                                 <input type="text" name="mensaje" id="" placeholder="Escribe un mensaje adicional" className="col-10"/>
                             </Col>
                             <p className="my-4">*datos obligatorios</p>
-                            <button><b>Enviar</b></button>
+                            <button className="slide-button"><b>Enviar</b></button>
                         </Form>
                     </Col>
                 </Row>

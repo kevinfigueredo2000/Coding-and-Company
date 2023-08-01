@@ -1,7 +1,7 @@
 #contacto {
     background: linear-gradient(to left, white 70%, #E9E6E1 30%);
 }
-
+/* 
 button {
     border: 1px solid;
     padding: 8px 55px;
@@ -13,7 +13,7 @@ button:hover {
     color: #e9e6e1;
     background-image: linear-gradient(to bottom, #383838, #383838);
     transition: 1s;
-}
+} */
 
 input {
     border-top: none;
@@ -57,3 +57,29 @@ h4 {
 #contacto .row {
     padding: 6rem 0px;
 }
+
+
+
+.slide-button {
+    background: linear-gradient(to right, black 50%, pink 50%); /* Inicialmente fondo negro en la mitad izquierda y rosa en la mitad derecha */
+    background-size: 200% 100%; /* Duplicar el ancho del fondo para poder desplazarlo */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-position 0.3s ease; /* Transición suave de la posición del fondo */
+  }
+  
+  /* Al hacer hover en el botón */
+  .slide-button:hover {
+    background-position: -100% 0; /* Desplazar el fondo completamente a la izquierda */
+    transition: background-position 0.3s ease;
+  }
+  
+  
+  
+  
+  
