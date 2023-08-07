@@ -14,7 +14,7 @@ export const NoticiasFrescas = () => {
                     <h2 className="text-center">Noticias Frescas</h2>
                 </Row>
                 <Row>
-                    <Col xxl="3" sm="6" className="mt-4">
+                    <Col xxl="3" md="5" className="mx-automt-4">
                         <article className="mb-3">
                             <Image width={300} height={370} alt="news-01" src="/assets/imgs/news-01.jpg" className="col-12 borde-news mb-1" />
                             <p>Chin chin por nuestra plata en el #hackforgood del cdec</p>
@@ -27,7 +27,7 @@ export const NoticiasFrescas = () => {
                         </article>
 
                     </Col>
-                    <Col xxl="3" sm="6">
+                    <Col xxl="3" md="5" className="mx-auto">
                         <article >
                             <Image width={300} height={230} alt="news-02" src="/assets/imgs/news-02.jpg" className="col-12 borde-news mb-1" />
                             <p>Dos alumnas de Brother crean la primera manifestación feminista en Twitch</p>
@@ -42,7 +42,7 @@ export const NoticiasFrescas = () => {
 
 
                     </Col>
-                    <Col xxl="3" sm="6">
+                    <Col xxl="3" md="5" className="mx-auto">
                         <article >
                             <Image width={300} height={430} alt="news-03" src="/assets/imgs/news-03.jpg" className="col-12 borde-news mb-1" />
                             <p>Brother Presenta {`<`}Pinta y Colorea{`>`}: el ciclo con el mejor talento gráfico de Madrid</p>
@@ -55,7 +55,7 @@ export const NoticiasFrescas = () => {
                         </article>
 
                     </Col>
-                    <Col xxl="3" sm="6">
+                    <Col xxl="3" md="5" className="mx-auto">
                         <article >
                             <Image width={300} height={330}alt="news-04" src="/assets/imgs/news-04.jpg" className="col-12 borde-news mb-1" />
                             <p>Las nuevas ideas llegan a correos gracias a los alumnos de Brother</p>

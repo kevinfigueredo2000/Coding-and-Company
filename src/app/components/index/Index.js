@@ -15,7 +15,7 @@ export const Index = () => {
             <Image width={100} height={100} alt="white-arrow" src="/assets/svg/white-arrow1.svg" id="white-arrow2" style={{ stroke: "white" }} />
             <Row className="w-100">
                 <hr />
-                <Col xxl="5" className="ms-auto">
+                <Col xxl="5" lg="5" className="ms-auto">
                     <Row>
                         <Image width={100} height={100} alt="minus" src="/assets/svg/minus.svg" id="minus" className="col-5" />
                         <Image width={100} height={100} alt="logo" src="/assets/svg/logo.svg" id="logo" className="col-7 my-auto" />
@@ -32,7 +32,7 @@ export const Index = () => {
                     <hr className="hrs" />
                     <p id="sub-titulo">Doers School</p>
                 </Col>
-                <Col xxl="4" id="col-botones">
+                <Col xxl="4" lg="4" id="col-botones">
                     <div style={{ position: "absolute" }}>
                         <Image width={100} height={100} alt="yellow-hex" src="/assets/svg/yellow-hex.svg" id="orange-hex" />
                     </div>

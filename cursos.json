@@ -1,0 +1,38 @@
+[
+    {
+        "img": "/assets/imgs/thumb-02.jpg",
+        "title": "thumb-2",
+        "description": "Curso anual de Creatividad",
+        "available": "Hay plazas disponibles."
+    },
+    {
+        "img": "/assets/imgs/thumb-03.jpg",
+        "title": "thumb-3",
+        "description": "Planificación y Estrategia Creativa 2021",
+        "available": "Reserva para la próxima edicion."
+    },
+    {
+        "img": "/assets/imgs/thumb-01.jpg",
+        "title": "thumb-1",
+        "description": "Pr & Comunicación 2021",
+        "available": "Reserva para la próxima edicion."
+    },
+    {
+        "img": "/assets/imgs/thumb-05.jpg",
+        "title": "thumb-5",
+        "description": "Digital y social Media",
+        "available": "Hay plazas disponibles."
+    },
+    {
+        "img": "/assets/imgs/thumb-06.jpg",
+        "title": "thumb-6",
+        "description": "Design Thinking",
+        "available": "Hay plazas disponibles."
+    },
+    {
+        "img": "/assets/imgs/thumb-04.jpg",
+        "title": "thumb-4",
+        "description": "Planificación y Estrategia Creativa",
+        "available": "Reserva para la próxima edicion."
+    }
+]

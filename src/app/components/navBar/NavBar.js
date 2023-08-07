@@ -66,13 +66,13 @@ export const Navbar = () => {
                                 <Image src="/assets/svg/logo.svg" width={100} height={20} ref={Logo} alt="logo" className="d-none" />
                             </Link>
                         </li>
-                        {Itemlist.map((i, index)=>{
-                            return(
-                        <li className=" px-4 my-auto" onMouseEnter={()=> setDisplay(index)} onMouseLeave={() => setDisplay(null)} key={index}>
-                            <Image width={70} height={60} src="/assets/svg/hex-blue.svg" alt="hex-blue" id={index} className={`${i === "#wearedoers" || display === index ? 'show' : ''} hex-blue-nav`} />
-                            <Link href="">{i}</Link>
-                        </li>
-                        )
+                        {Itemlist.map((i, index) => {
+                            return (
+                                <li className=" px-4 my-auto" onMouseEnter={() => setDisplay(index)} onMouseLeave={() => setDisplay(null)} key={index}>
+                                    <Image width={70} height={60} src="/assets/svg/hex-blue.svg" alt="hex-blue" id={index} className={`${i === "#wearedoers" || display === index ? 'show' : ''} hex-blue-nav`} />
+                                    <Link href="">{i}</Link>
+                                </li>
+                            )
                         })}
                         <li className="mx-4">
                             <Link href=""><Image width={20} height={20} src="/assets/svg/email.svg" alt="email" className="iconos-nav" /></Link>

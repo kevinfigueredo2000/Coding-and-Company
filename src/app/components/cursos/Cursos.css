@@ -4,10 +4,11 @@
     position: relative;
 }
 
-#cursos .container{
+#cursos .container {
     z-index: 10;
     position: relative;
 }
+
 #cloud {
     position: absolute;
     left: 19rem;
@@ -32,10 +33,11 @@
     border-radius: 50%;
 }
 
-.flechas-cursos:hover{
+.flechas-cursos:hover {
     transform: rotate(45deg);
     border-radius: unset;
 }
+
 .white-arrow-down-cursos {
     transform: rotate(180deg);
 }
@@ -54,10 +56,27 @@
     z-index: 1;
 }
 
-.arrow{
+.arrow {
     transform: rotate(316deg);
 }
 
-.arrow1{
+.arrow1 {
     transform: rotate(135deg);
+}
+
+.disponibility {
+    position: absolute;
+    top: 21%;
+    width: 150px;
+    text-align: center;
+}
+.img-cursos:hover{
+    opacity: 0.8;
+}
+
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
 }

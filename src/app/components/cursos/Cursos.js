@@ -2,11 +2,13 @@ import { Col, Container, Row } from "react-bootstrap"
 import "./Cursos.css"
 import Image from "next/image"
 import { useState } from "react"
+import cursos from "/cursos.json" 
 
 export const Cursos = () => {
 
     const [transformArrowDown, setTransformArrowDown] = useState("white-arrow-down-cursos")
     const [transformArrow, setTransformArrow] = useState()
+    const [show, setShow] = useState("hide")
 
     return (
         <section id="cursos" className="py-4">
@@ -16,7 +18,7 @@ export const Cursos = () => {
             <Image width={100} height={100} alt="yellow-asterisk-big" src="/assets/svg/yellow-asterisk-big.svg" id="yellow-asterisk" />
             <Container>
                 <Row>
-                    <Col xxl="4" lg="4" md="12">
+                    <Col xxl="4" lg="3" md="12">
                         <h2>
                             Mucho más<br />que una escuela de<br /><u><b>creativos</b></u>
                         </h2>
@@ -35,43 +37,33 @@ export const Cursos = () => {
                             </p>
                         </Col>
                     </Col>
-
-                    <Col xxl="7" lg="7" md="12" className="ms-xxl-auto ">
+                    <Col xxl="7" xl="8" lg="9" md="12" className="ms-xxl-auto ">
                         <h2><b>Cursos & Workshops</b></h2>
                         <Row className="mt-4 ms-2">
                             <Col xxl="10" md="11" sm="11">
                                 <Row className="mt-2">
-                                    <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <Image width={150} height={150} alt="thumb-2" src="/assets/imgs/thumb-02.jpg" />
-                                        <p className="col-8">Curso anual de Creatividad</p>
-                                    </article>
-                                    <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <Image width={150} height={150} alt="thumb-3" src="/assets/imgs/thumb-03.jpg" />
-                                        <p className="col-8">Planificación y Estrategia Creativa 2021</p>
-                                    </article>
-                                    <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <Image width={150} height={150} alt="thumb-1" src="/assets/imgs/thumb-01.jpg" />
-                                        <p className="col-8">Pr & Comunicación 2021</p>
-                                    </article>
-                                    <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <Image width={150} height={150} alt="thumb-5" src="/assets/imgs/thumb-05.jpg" />
-                                        <p className="col-8">Digital y social Media</p>
-                                    </article>
-                                    <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <Image width={150} height={150} alt="thumb-6" src="/assets/imgs/thumb-06.jpg" />
-                                        <p className="col-8">Design Thinking</p>
-                                    </article>
-                                    <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3" >
-                                        <Image width={150} height={150} alt="thumb-4" src="/assets/imgs/thumb-04.jpg" />
-                                        <p className="col-8">Planificación y Estrategia Creativa</p>
-                                    </article>
+                                    {cursos.map((curso, index) => {
+                                        return (
+                                            <article className="col-xxl-4 col-lg-4 col-md-4 col-4 pb-3 position-relative" >
+                                                <div>
+                                                    <Image width={150} height={150} alt={curso.title}
+                                                        src={curso.img} className="img-cursos"
+                                                        onMouseEnter={() => setShow(index)}
+                                                        onMouseLeave={() => setShow(null)}
+                                                    />
+                                                    <p className={`${show === index ? 'show' : "hide"} disponibility`}style={{pointerEvents: "none"}}>{curso.available}</p>
+                                                </div>
+                                                <p className="col-8">{curso.description}</p>
+                                            </article>
+                                        )
+                                    })}
                                 </Row>
                             </Col>
                             <Col xxl="1" md="1" sm="1" className="mt-2">
-                                <Row className="mb-4 flechas-cursos" style={{width:"130%"}} onMouseEnter={()=> setTransformArrow("arrow")} onMouseLeave={()=> setTransformArrow("")}>
+                                <Row className="mb-4 flechas-cursos" style={{ width: "130%" }} onMouseEnter={() => setTransformArrow("arrow")} onMouseLeave={() => setTransformArrow("")}>
                                     <Image width={25} height={40} className={`col-11 m-auto ${transformArrow}`} alt="white-arrow" src="/assets/svg/white-arrow.svg" />
                                 </Row>
-                                <Row className="mb-4 flechas-cursos" style={{width:"130%"}} onMouseEnter={()=> setTransformArrowDown("arrow1")} onMouseLeave={()=> setTransformArrowDown("white-arrow-down-cursos")}>
+                                <Row className="mb-4 flechas-cursos" style={{ width: "130%" }} onMouseEnter={() => setTransformArrowDown("arrow1")} onMouseLeave={() => setTransformArrowDown("white-arrow-down-cursos")}>
                                     <Image width={25} height={40} className={`col-11 m-auto ${transformArrowDown}`} alt="white-arrow" src="/assets/svg/white-arrow.svg" id="white-arrow-down-cursos" />
                                 </Row>
                             </Col>
